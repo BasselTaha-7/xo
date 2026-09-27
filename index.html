@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لعبة Tic Tac Toe</title>
+    <meta name="description" content="لعبة XO بسيطة للاعبين على نفس الجهاز.">
+    <title>XO — لعبة للاعبين</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>لعبة Tic Tac Toe</h1>
-    <div class="game-board">
-        <div class="cell" data-index="0"></div>
-        <div class="cell" data-index="1"></div>
-        <div class="cell" data-index="2"></div>
-        <div class="cell" data-index="3"></div>
-        <div class="cell" data-index="4"></div>
-        <div class="cell" data-index="5"></div>
-        <div class="cell" data-index="6"></div>
-        <div class="cell" data-index="7"></div>
-        <div class="cell" data-index="8"></div>
-    </div>
-    <p class="status">دور اللاعب: X</p>
-    <button class="restart">إعادة اللعب</button>
+    <main>
+        <h1>لعبة XO</h1>
+        <p>لعبة للاعبين على نفس الجهاز.</p>
+        <div class="game-board" role="group" aria-label="لوحة لعبة XO">
+            <button class="cell" type="button" data-index="0" aria-label="الخانة 1"></button>
+            <button class="cell" type="button" data-index="1" aria-label="الخانة 2"></button>
+            <button class="cell" type="button" data-index="2" aria-label="الخانة 3"></button>
+            <button class="cell" type="button" data-index="3" aria-label="الخانة 4"></button>
+            <button class="cell" type="button" data-index="4" aria-label="الخانة 5"></button>
+            <button class="cell" type="button" data-index="5" aria-label="الخانة 6"></button>
+            <button class="cell" type="button" data-index="6" aria-label="الخانة 7"></button>
+            <button class="cell" type="button" data-index="7" aria-label="الخانة 8"></button>
+            <button class="cell" type="button" data-index="8" aria-label="الخانة 9"></button>
+        </div>
+        <p class="status" aria-live="polite">دور اللاعب: X</p>
+        <button class="restart" type="button">إعادة اللعب</button>
+    </main>
     <script src="script.js"></script>
-    
-    <div class="watermark">@Bassel Taha</div>
+    <div class="watermark" aria-hidden="true">Bassel Taha</div>
 </body>
 </html>
